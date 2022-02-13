@@ -6,10 +6,6 @@ const BlockMedia = ({ data }) => {
 
   return (
     <div className="py-8">
-      {isVideo ? (
-        <p>TODO video</p>
-      ) : (
-      )}
     </div>
   )
 }
