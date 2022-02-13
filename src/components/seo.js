@@ -7,18 +7,9 @@ const SEO = ({ seo = {} }) => {
     query {
       strapiGlobal {
         siteName
-        favicon {
-          localFile {
-            url
-          }
-        }
         defaultSeo {
           metaTitle
           metaDescription
-          shareImage {
-            localFile {
-              url
-            }
           }
         }
       }
