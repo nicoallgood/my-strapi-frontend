@@ -17,11 +17,6 @@ const BlockSlider = ({ data }) => {
         swipe={true}
       >
         {data.files.map((file) => (
-          <GatsbyImage
-            key={file.id}
-            image={getImage(file.localFile)}
-            alt={file.alternativeText}
-          />
         ))}
       </Slider>
     </div>

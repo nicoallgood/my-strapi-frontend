@@ -49,11 +49,6 @@ export const query = graphql`
     ... on STRAPI__COMPONENT_SHARED_MEDIA {
       file {
         mime
-        localFile {
-          childImageSharp {
-            gatsbyImageData
-          }
-        }
       }
     }
     ... on STRAPI__COMPONENT_SHARED_QUOTE {
@@ -64,11 +59,6 @@ export const query = graphql`
       files {
         id
         mime
-        localFile {
-          childImageSharp {
-            gatsbyImageData
-          }
-        }
       }
     }
   }

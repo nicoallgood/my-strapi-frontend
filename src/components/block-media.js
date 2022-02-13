@@ -9,10 +9,6 @@ const BlockMedia = ({ data }) => {
       {isVideo ? (
         <p>TODO video</p>
       ) : (
-        <GatsbyImage
-          image={getImage(data.file.localFile)}
-          alt={data.file.alternativeText}
-        />
       )}
     </div>
   )
