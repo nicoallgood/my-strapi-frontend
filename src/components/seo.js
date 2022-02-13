@@ -10,7 +10,6 @@ const SEO = ({ seo = {} }) => {
         defaultSeo {
           metaTitle
           metaDescription
-          }
         }
       }
     }
