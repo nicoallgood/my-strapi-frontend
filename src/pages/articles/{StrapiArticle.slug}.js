@@ -21,11 +21,6 @@ const ArticlePage = ({ data }) => {
       <header className="container max-w-4xl py-8">
         <h1 className="text-6xl font-bold text-neutral-700">{article.title}</h1>
         <p className="mt-4 text-2xl text-neutral-500">{article.description}</p>
-        <GatsbyImage
-          image={getImage(article.cover.localFile)}
-          alt={article.cover.alternativeText}
-          className="mt-6"
-        />
       </header>
       <main className="mt-8">
         <BlocksRenderer blocks={article.blocks} />
@@ -46,12 +41,6 @@ export const query = graphql`
       }
       cover {
         alternativeText
-        localFile {
-          url
-          childImageSharp {
-            gatsbyImageData
-          }
-        }
       }
     }
   }
