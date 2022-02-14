@@ -10,6 +10,9 @@ const AboutPage = () => {
     query {
       strapiAbout {
         title
+	blocks {
+          ...Blocks
+        }
       }
     }
   `)
