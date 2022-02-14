@@ -18,6 +18,7 @@ const SEO = ({ seo = {} }) => {
   const { siteName, defaultSeo, favicon } = strapiGlobal
 
   // Merge default and page-specific SEO values
+  // Merge default and page-specific SEO values
   const fullSeo = { ...defaultSeo, ...seo }
 
   // Add site name to title
