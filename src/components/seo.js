@@ -54,23 +54,6 @@ const SEO = ({ seo = {} }) => {
         }
       )
     }
-    if (fullSeo.shareImage) {
-      const imageUrl = fullSeo.shareImage.localFile.url
-      tags.push(
-        {
-          name: "image",
-          content: imageUrl,
-        },
-        {
-          property: "og:image",
-          content: imageUrl,
-        },
-        {
-          name: "twitter:image",
-          content: imageUrl,
-        }
-      )
-    }
     if (fullSeo.article) {
       tags.push({
         property: "og:type",
@@ -90,7 +73,7 @@ const SEO = ({ seo = {} }) => {
       link={[
         {
           rel: "icon",
-          href: favicon.localFile.url,
+          href: "",
         },
       ]}
       meta={metaTags}
